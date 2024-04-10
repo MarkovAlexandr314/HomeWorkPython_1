@@ -29,7 +29,7 @@ def R(real_value: np.array, predict_value: np.array):
     tmp2 = np.sum(tmp2 ** 2)
     r = 1 - tmp1/tmp2
 
-    return r
+    return round(r, NDIGITS)
 
 
 def get_accuracy_score(

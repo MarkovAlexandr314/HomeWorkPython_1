@@ -4,7 +4,6 @@ from algorithms.regressor_abc import RegressorABC, CallingOrder
 
 
 class NonparametricRegressor(RegressorABC):
-    _distances: np.ndarray
 
     def __init__(self) -> None:
         self._abscissa_train = None

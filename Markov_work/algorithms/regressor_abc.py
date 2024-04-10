@@ -15,6 +15,7 @@ class RegressorABC(abc.ABC):
     _abscissa_train: Union[np.ndarray, None]
     _values: Union[np.ndarray, None]
     _k_neighbours: int
+    _distances: np.ndarray
 
     @abc.abstractmethod
     def fit(self, abscissa: Iterable, ordinates: Iterable, k: int, metric: str = 'l2') -> None:
